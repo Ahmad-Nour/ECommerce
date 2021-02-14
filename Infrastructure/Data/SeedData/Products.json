@@ -1,0 +1,50 @@
+[
+  {
+    "Name": "Laptop 1",
+    "Description": "Laptop 1 Desc",
+    "Price": 111.1,
+    "PictureUrl": "C:\\Users\\Ahmad Nour\\Pictures\\Laptop\\jpg",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "laptop 2",
+    "Description": "Laptop 2 Desc",
+    "Price": 222.2,
+    "PictureUrl": "C:\\Users\\Ahmad Nour\\Pictures\\Laptop\\jpg",
+    "ProductTypeId": 2,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "laptop 3",
+    "Description": "Laptop 3 Desc",
+    "Price": 333.3,
+    "PictureUrl": "C:\\Users\\Ahmad Nour\\Pictures\\Laptop\\jpg",
+    "ProductTypeId": 3,
+    "ProductBrandId": 3
+  },
+  {
+    "Name": "laptop 4",
+    "Description": "Laptop 4 Desc",
+    "Price": 444.4,
+    "PictureUrl": "C:\\Users\\Ahmad Nour\\Pictures\\Laptop\\jpg",
+    "ProductTypeId": 4,
+    "ProductBrandId": 4
+  },
+  {
+    "Name": "laptop 5",
+    "Description": "Laptop 5 Desc",
+    "Price": 555.5,
+    "PictureUrl": "C:\\Users\\Ahmad Nour\\Pictures\\Laptop\\jpg",
+    "ProductTypeId": 5,
+    "ProductBrandId": 5
+  },
+  {
+    "Name": "laptop 6",
+    "Description": "Laptop 6 Desc",
+    "Price": 666.6,
+    "PictureUrl": "C:\\Users\\Ahmad Nour\\Pictures\\Laptop\\jpg",
+    "ProductTypeId": 6,
+    "ProductBrandId": 6
+  }
+]
