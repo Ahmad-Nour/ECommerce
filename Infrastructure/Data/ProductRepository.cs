@@ -11,7 +11,7 @@ namespace Infrastructure.Data
         private readonly StoreContext _context;
         public ProductRepository(StoreContext context)
         {
-            this._context = context;
+            _context = context;
         }
 
         public async Task<ProductBrand> GetProductBrandByIdAsync(int id)

@@ -11,7 +11,6 @@ namespace Infrastructure.Data
         {
             var query =inputQuery;
 
-            System.Console.WriteLine(spec.Criteria);
             if(spec.Criteria !=null)
             {
                 query = query.Where(spec.Criteria);
