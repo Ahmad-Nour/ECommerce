@@ -13,6 +13,8 @@ namespace API
 {
     public class Startup
     {
+        private readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
         private readonly IConfiguration _config;
 
         public Startup(IConfiguration config)
@@ -28,14 +30,17 @@ namespace API
             services.AddDbContext< StoreContext >(x =>x.UseSqlite(_config.GetConnectionString("DefaultConnection")));
             services.AddApplicationServices();
             services.AddSwaggerDocumention();
-            services.AddCors(opt =>
+            services.AddCors(options =>
             {
-                opt.AddPolicy("CorsPolicy" , policy =>
-                {
-                    policy.WithOrigins("http://localhost:5000").AllowAnyHeader().AllowAnyMethod();
-                });
+                options.AddPolicy(name: MyAllowSpecificOrigins,
+                    builder =>
+                    {
+                    builder.WithOrigins("http://localhost:5000")
+                    .AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .SetIsOriginAllowed((host) => true);
+                    });
             });
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,9 +54,9 @@ namespace API
 
             app.UseRouting();
 
-            app.UseStaticFiles();
+            app.UseCors(MyAllowSpecificOrigins);
 
-            app.UseCors("CorsPolicy");
+            app.UseStaticFiles();
 
             app.UseAuthorization();
 

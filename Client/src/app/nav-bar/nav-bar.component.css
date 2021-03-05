@@ -1,0 +1,12 @@
+.card-no {
+    position: absolute;
+    min-height: 20px;
+    min-width: 20px;
+    border-radius: 50%;
+    font-size: 1em;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    right: 32px;
+    top: -12px;
+}
