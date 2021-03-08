@@ -35,9 +35,9 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1102.2",
-    "@angular/cli": "^11.2.2",
-    "@angular/compiler-cli": "~11.2.3",
-    "@nativescript/schematics": "^11.0.0",
+    "@angular/cli": "^9.0.0",
+    "@angular/compiler-cli": "~9.0.0",
+    "@nativescript/schematics": "^9.0.0",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
