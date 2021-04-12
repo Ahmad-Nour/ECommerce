@@ -23,8 +23,7 @@ namespace API.Errors
                 401 =>"Authorized, you are not",
                 404 =>"Resource found, it was not",
                 500 =>"I hate Error..",
-                _ => null
-                                
+                _ => null                  
             };
         }
 
