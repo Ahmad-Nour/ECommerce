@@ -2,6 +2,6 @@ obj
 bin
 appsettings.json
 *.db
-client
 ProductRepository.cs
 IProductRepository.cs
+Client
